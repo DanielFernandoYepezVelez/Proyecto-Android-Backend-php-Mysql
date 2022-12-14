@@ -1,5 +1,6 @@
 package com.example.empresapersonalsoft;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -38,19 +39,27 @@ public class IngresoFragment extends Fragment implements Response.Listener<JSONO
         jbtingresar = vista.findViewById(R.id.btingresar);
         jtvregistrar=vista.findViewById(R.id.tvregistrar);
 
-        jtvregistrar.setOnClickListener(new View.OnClickListener() {
+        jbtingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciar_sesion();
             }
         });
 
+        jtvregistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { registrar(); }
+        });
+
         return vista;
     }
 
     private void iniciar_sesion() {
+    }
 
-
+    private void registrar() {
+        Intent intent = new Intent(getContext(), RegistrarseActivity.class);
+        startActivity(intent);
     }
 
     @Override
