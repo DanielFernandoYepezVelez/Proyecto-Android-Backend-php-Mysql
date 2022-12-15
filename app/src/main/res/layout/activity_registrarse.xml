@@ -143,6 +143,7 @@
                 android:id="@+id/btnadicionar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="adicionar"
                 android:text="Adicionar" />
 
             <Button
@@ -158,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:onClick="actualizar"
                 android:text="Modificar" />
 
 
@@ -174,6 +176,7 @@
                 android:id="@+id/btnanular"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:onClick="anular"
                 android:text="Anular" />
 
             <Button
@@ -181,12 +184,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:onClick="limpiar"
                 android:text="Limpiar" />
 
             <Button
                 android:id="@+id/btnregresar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="regresar"
                 android:layout_marginLeft="20dp"
                 android:text="Regresar" />
 
